@@ -51,7 +51,7 @@ const startDeleteMovieHandler = (movieId) => {
   confirmDeletionButton.replaceWith(confirmDeletionButton.cloneNode(true));
 
   confirmDeletionButton = deleteMovieModal.querySelector(".btn--danger");
-  
+
   cancelDeletionButton.removeEventListener("click", closeMovieDeletionModal);
 
   cancelDeletionButton.addEventListener("click", closeMovieDeletionModal);
@@ -86,7 +86,6 @@ const closeMovieModal = () => {
 };
 
 const showMovieModal = () => {
-  // function() {}
   addMovieModal.classList.add("visible");
   toggleBackdrop();
 };
